@@ -1,0 +1,43 @@
+<!-- Botón para mostrar el menú -->
+<button class="menu-button" (click)="setVisibilityMenu()">☰ Menu</button>
+
+<!-- Contenedor principal que agrupa el menú y el contenido de ejercicio 2 -->
+<div class="main">
+    
+    <!-- Menú lateral -->
+    <div class="sidemenu-container"
+        [style.backgroundColor]="theme"
+        [style.width]="widthMenu + '%' "
+        [style.display]="visibleMenu ? 'flex' : 'none'">
+        
+        <!-- Sección de perfil -->
+        <div class="item profile-section">
+            <img src="https://cdn-icons-png.flaticon.com/128/8484/8484079.png" alt="Perfil.png" class="profile-img">
+            <p>{{ userName }}</p>
+            <button class="back-button" (click)="setVisibilityMenu()">← Back</button>
+        </div>
+
+        <!-- Ítems del menú -->
+        <div class="item menu-section">
+            <p><span>📅</span> Dashboard</p>
+        </div>
+
+        <div class="item menu-section">
+            <p><span>🧑</span> Profile</p>
+        </div>
+
+        <!-- Sección de acciones -->
+        <div class="item actions settings-section">
+            <button class="btn color-btn" (click)="setThemeColor('lightblue')">Change Color</button>
+            <button class="btn size-btn" (click)="setSizesMenu()">Change Size</button>
+        </div>
+    </div>
+
+    <!-- Contenido del Ejercicio 2 -->
+    <div class="exercise-content">
+        <h1>Ejercicio 2</h1>
+    </div>
+</div>
+
+
+

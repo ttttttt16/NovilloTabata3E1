@@ -1,0 +1,163 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Cambio de fuente para un estilo más moderno */
+    background-color: #f0f4f8; /* Fondo suave */
+}
+
+/* Contenedor principal que agrupa el menú y el contenido de ejercicio 2 */
+.main {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f0f4f8; /* Fondo suave */
+}
+
+/* Botón para abrir el menú */
+.menu-button {
+    background-color: #6c5ce7; /* Color principal (violeta) */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover {
+    background-color: #5a4de0; /* Variación más oscura del violeta */
+    transform: scale(1.08); /* Efecto de agrandamiento */
+}
+
+/* Menú lateral */
+.sidemenu-container {
+    width: 30%; /* Ajustar el tamaño del menú lateral */
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: all 0.3s ease;
+    padding: 30px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Sección de perfil */
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-section:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #6c5ce7;
+    margin-right: 15px;
+}
+
+.profile-section p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* Ítems del menú */
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #f5f5fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.item:hover {
+    background-color: #e8e8f7;
+    transform: translateX(10px); /* Efecto de desplazamiento */
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+}
+
+/* Botones dentro del menú */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.color-btn {
+    background-color: #00b894; /* Verde brillante */
+}
+
+.size-btn {
+    background-color: #0984e3; /* Azul */
+}
+
+.color-btn:hover, .size-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Contenido del Ejercicio 2 */
+.exercise-content {
+    width: 70%; /* Resto del espacio disponible */
+    height: 100vh; /* Ocupar toda la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa; /* Fondo suave */
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.exercise-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #636e72;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.exercise-content:hover h1 {
+    color: #2d3436; /* Cambio de color al pasar el ratón */
+}
+
